@@ -3,7 +3,7 @@
   "name": "English Word Learner",
   "version": "1.0",
   "description": "Highlights unfamiliar English words on web pages",
-  "permissions": ["storage", "activeTab"],
+  "permissions": ["storage", "activeTab", "contextMenus"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {

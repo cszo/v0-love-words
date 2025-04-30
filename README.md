@@ -56,14 +56,14 @@ Replace the array in `wordList.js` with your own list of words. The default list
 
 Modify `content.css` to change the appearance of highlighted words:
 
-\`\`\`css
+```css
 .highlighted-word {
   background-color: #ffeb3b;
   border-radius: 2px;
   padding: 0 2px;
   cursor: pointer;
 }
-\`\`\`
+```
 
 ### Extension Icons
 

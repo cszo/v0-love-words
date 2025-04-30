@@ -18,8 +18,6 @@ const wordListTab = document.getElementById("wordListTab")
 const masteredWordsSection = document.getElementById("masteredWordsSection")
 const wordListSection = document.getElementById("wordListSection")
 
-// Mock WORD_LIST for demonstration purposes.  Replace with actual word list source.
-const WORD_LIST = ["apple", "banana", "cherry", "date", "elderberry"]
 
 // Function to update the stats display
 function updateStats() {
