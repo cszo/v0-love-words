@@ -1,0 +1,30 @@
+.highlighted-word {
+  background-color: #ffeb3b;
+  border-radius: 2px;
+  padding: 0 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.highlighted-word:hover {
+  background-color: #fdd835;
+}
+
+.word-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10000;
+  display: none;
+}
+
+.highlighted-word:hover .word-tooltip {
+  display: block;
+}

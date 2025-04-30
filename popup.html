@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>English Word Learner</title>
+  <style>
+    body {
+      width: 350px;
+      font-family: Arial, sans-serif;
+      padding: 15px;
+    }
+    h1 {
+      font-size: 18px;
+      margin-top: 0;
+      color: #333;
+    }
+    .stats {
+      margin-bottom: 15px;
+      padding: 10px;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+    }
+    .search-container {
+      margin-bottom: 15px;
+      display: flex;
+    }
+    #searchInput {
+      flex-grow: 1;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .word-list {
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .word-item {
+      padding: 8px 10px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .word-item:last-child {
+      border-bottom: none;
+    }
+    .remove-btn {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 4px 8px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .remove-btn:hover {
+      background-color: #d32f2f;
+    }
+    .empty-list {
+      padding: 15px;
+      text-align: center;
+      color: #666;
+    }
+    .tabs {
+      display: flex;
+      margin-bottom: 15px;
+    }
+    .tab {
+      padding: 8px 15px;
+      background-color: #f1f1f1;
+      border: 1px solid #ddd;
+      cursor: pointer;
+    }
+    .tab.active {
+      background-color: #fff;
+      border-bottom: 1px solid #fff;
+    }
+    #addWordContainer {
+      margin-top: 15px;
+      display: flex;
+    }
+    #newWordInput {
+      flex-grow: 1;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-right: 5px;
+    }
+    #addWordBtn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>English Word Learner</h1>
+  
+  <div class="stats">
+    <div>Words mastered: <span id="masteredCount">0</span></div>
+    <div>Words remaining: <span id="remainingCount">0</span></div>
+  </div>
+  
+  <div class="tabs">
+    <div class="tab active" id="masteredTab">Mastered Words</div>
+    <div class="tab" id="wordListTab">Word List</div>
+  </div>
+  
+  <div id="masteredWordsSection">
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search mastered words...">
+    </div>
+    
+    <div class="word-list" id="masteredWordsList">
+      <div class="empty-list">No mastered words yet</div>
+    </div>
+    
+    <div id="addWordContainer">
+      <input type="text" id="newWordInput" placeholder="Add a word manually...">
+      <button id="addWordBtn">Add</button>
+    </div>
+  </div>
+  
+  <div id="wordListSection" style="display: none;">
+    <div class="search-container">
+      <input type="text" id="wordListSearchInput" placeholder="Search word list...">
+    </div>
+    
+    <div class="word-list" id="fullWordList"></div>
+  </div>
+  
+  <script src="wordList.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
