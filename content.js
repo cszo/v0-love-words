@@ -1,6 +1,5 @@
 // Global variables
 let masteredWords = []
-const WORD_LIST = [] // Declare WORD_LIST (or import it if available)
 
 // Function to check if a word is in the word list and not mastered
 function shouldHighlight(word) {

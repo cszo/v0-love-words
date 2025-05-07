@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "English Word Learner",
+  "name": "Yours Vocabulary",
   "version": "1.0",
-  "description": "Highlights unfamiliar English words on web pages",
+  "description": "Highlights unfamiliar English words on web pages, and add to your vocabulary. Build your personal vocabulary at any time",
   "permissions": ["storage", "activeTab", "contextMenus"],
   "action": {
     "default_popup": "popup.html",
